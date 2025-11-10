@@ -1,0 +1,63 @@
+# seed: 1337
+# image_size: 224
+# models: [convnext_tiny, efficientnetv2_s, swin_tiny_patch4_window7_224]
+# pretrained: True
+# batch_size: 32
+# epochs: 5
+# optimizer: adamw
+# lr: 0.0003
+# weight_decay: 0.05
+# scheduler: cosine
+# warmup_epochs: 5
+# loss: focal
+# mixup: 0.2
+# cutmix: 0.2
+# ema_decay: 0.999
+# tta: true
+# use_metadata: true
+# class_names: [ACK, BCC, MEL, NEV, SCC, SEK]
+# metadata_cols: ["age", "gender"]
+
+
+# seed: 1337
+# image_size: 224
+# # MODIFIED: New ensemble models list
+# models: [swin_base_patch4_window7_224, vit_base_patch16_224, efficientnet-b4]
+# pretrained: True
+# batch_size: 32
+# epochs: 5
+# optimizer: adamw
+# lr: 0.0003
+# weight_decay: 0.05
+# scheduler: cosine
+# warmup_epochs: 5
+# loss: focal
+# mixup: 0.2
+# cutmix: 0.2
+# ema_decay: 0.999
+# tta: true
+# use_metadata: true
+# class_names: [ACK, BCC, MEL, NEV, SCC, SEK]
+# metadata_cols: ["age", "gender"]
+
+
+
+seed: 1337
+image_size: 224
+models: [swin_base_patch4_window7_224, vit_base_patch16_224, efficientnet-b4]
+pretrained: True
+batch_size: 32
+epochs: 35
+optimizer: adamw
+lr: 0.0003
+weight_decay: 0.05
+scheduler: cosine
+warmup_epochs: 5
+loss: focal
+mixup: 0.2
+cutmix: 0.2
+ema_decay: 0.999
+tta: true
+use_metadata: true
+class_names: [ACK, BCC, MEL, NEV, SCC, SEK]
+metadata_cols: ["age", "gender"]

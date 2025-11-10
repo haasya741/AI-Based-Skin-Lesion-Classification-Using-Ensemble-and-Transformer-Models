@@ -1,0 +1,5 @@
+.lightning_studio
+checkpoints
+images
+lightning_logs
+metadata.csv
